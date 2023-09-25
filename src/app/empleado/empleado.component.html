@@ -1,5 +1,10 @@
 <p>Nombre del empleado: {{ nombre }}</p>
 <p>Apellido del empleado: {{ apellido }}</p>
-<p>Edad del empleado: {{ getEdad() + 10 }}</p>
-<p>Empresa del empleado: {{ empresa }}</p>
+<p>
+  <!-- Se puede aplicar Ternario-->
+  Edad del empleado: {{ getEdad() >= 18 ? "Mayor de Edad" : "Menor de Edad" }}
+</p>
+<p>Empresa del empleado: {{ empresa.value }}</p>
+Introduce la empresa: <input type="text" #empresa (keyup)="(0)" />
+<br />
 <br />

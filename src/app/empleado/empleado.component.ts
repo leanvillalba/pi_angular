@@ -9,7 +9,7 @@ export class EmpleadoComponent {
   nombre = 'Juan';
   apellido = 'Pérez';
   private edad = 18; // Se pueden encapsular los datos
-  empresa = 'Píldoras Informáticas';
+  //empresa = 'Píldoras Informáticas';
   getEdad() {
     return this.edad; //Mostrar datos a través de getter
   }
